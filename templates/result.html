@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style1.css') }}">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  
+</head> 
+<body>
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+
+            
+            <a class="navbar-brand" href="#" >ArfGAP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('result') }}">About</a>
+                </li>
+                <!--<li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Project Details</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Github</a>
+                </li>  -->
+                
+                
+              </ul>
+              
+            </div>
+            
+          </nav>
+
+    <!--<section class="header-section">
+        <div class="center-div">
+            <h1 class="font-weight-bold"> Sayem is building this website</h1>
+            <p>
+                I am practicing rn
+
+            </p>
+            <div class="header-buttons">
+                <a href="#"> AboutUs </a>
+                <a href="#"> Contact</a>
+
+            </div>
+
+        </div> 
+
+    </section>-->      
+    <center>
+      
+    <form method ='POST' enctype="multipart/form-data">
+      <div class="main6" id="uploadheader" > <!-- Here Number of Nucleus would be included from results-->
+        <h1>Project Details</h1>
+        <h6>Computer vision is a field of artificial intelligence (AI) that enables computers and systems to derive meaningful information from digital images, videos and other visual inputs — and take actions or make recommendations based on that information. If AI enables computers to think, computer vision enables them to see, observe and understand.
+
+          Computer vision works much the same as human vision, except humans have a head start. Human sight has the advantage of lifetimes of context to train how to tell objects apart, how far away they are, whether they are moving and whether there is something wrong in an image.</h6>
+        
+    </div>
+    <br>
+
+    <div class="main7" id="uploadheader" > <!-- Here details of person1 would be included from results-->
+      <h1>Authors</h1>
+      <h6>
+        person1 </h6>
+        
+    </div>
+    <br>
+
+    <div class="main8" id="uploadheader" > <!-- Here Toxicity would be included from results-->
+      
+      <h6>
+        Person 2 and ....... </h6>
+        
+    </div>
+
+    <div class="main9" id="uploadheader" > <!-- Here Toxicity would be included from results-->
+      
+      <h6>
+        Person 3 and ....... </h6>
+        
+    </div>
+    <div class="main10" id="uploadheader" > <!-- Here Toxicity would be included from results-->
+      
+      <h6>
+        Person 4 and ....... </h6>
+        
+    </div>
+          
+          
+  </form>
+      
+  
+    </center>
+    </div>
+    
+
+<!--******************************hea parts ends ****************** -->
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+
+
+</body>   
+</html>
+
+
+<!--<!DOCTYPE html>
+<title> Upload new file</title>
+<h1> File Input</h1>
+<form method ='POST' enctype="multipart/form-data">
+    
+    <input type="file" name = "image">
+    <input type="file" name = "image1">
+    <input type="submit" value = "Predict">
+    <br>
+    <h3>Prediction: {{prediction}}</h3>
+        
+        
+</form>

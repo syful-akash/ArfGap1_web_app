@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+		ArfGAP1 Detector
+    </title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  
+</head>
+
+
+<body
+style= "color: blue">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#" >ArfGAP</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<!-- <li class="nav-item"> -->
+			  <!-- <a class="nav-link" href="{{ url_for('upload') }}">About</a> -->
+			<!-- </li> -->
+		  </ul>
+
+		</div>
+	</nav>
+
+	<!-- <div class="body" style="margin-top:100px;"> -->
+
+		<!----------------------this part is for image upload----------------->
+		
+		<!--in the following line, values of 'action', 'method', 'enctype' are from
+		app.py script. enctype=multipart/form-data is for file upload-->
+		<form action = "/" method = "POST"  enctype=multipart/form-data>
+			
+			<div class="main" id="uploadheader" >
+			  	<p style="color:black" >Upload Nucleus Image</p>
+				<input type="file" name = "file">
+		  	</div>
+		  
+			<br>
+
+			<div class="main1" id="uploadheader1">
+			  <p style="color:black">Upload Golgi Image</p>
+			<input type="file" name = "gfile">
+			</div>
+
+
+
+			<!---------------------end of image upload/ left Column--------------------->
+	  
+			<!------------------Image Submit Button/ Middle Column------------------------>
+			<br>
+			<div class="main2" id="uploadheader2">
+			<input type="submit" value = "Predict" class="button">
+			</div>
+			<!------------------------End of Image Submit to model------------------>
+			
+			<!--Output Display/Middle Column-->
+			<br>
+			<div class="main3" id="uploadheader3">
+
+				{% if image_loc %}
+				<!-- <img class="mb-4" src="file.jpg" alt="" width="900" height="900"> HERE WE WILL UPLOAD THE OUTPUT PICTURE OF GOLGI -->
+				<img  src="{{image_loc}}" alt='Nucleus not found' width="350" height="350" >
+				{%endif%}
+				<h2>NUCLEUS</h2>
+			</div> 
+			
+			<br>
+			<br>
+
+			<div class="main4" id="uploadheader4">
+
+				{% if image_loc1 %}
+				<img class="mb-4" src="{{image_loc1}}" alt="" width="350" height="350"> <!--HERE WE WILL UPLOAD THE OUTPUT PICTURE OF NUCLEUS-->
+				{%endif%}
+				<h2>GOLGI</h2>
+			</div>
+			<!-- End of Middle Column -->
+			<br>
+			
+<!------------------------------Start of Right Column/ Result Colum-------------->
+
+			<div class="main6" id="uploadheader" > <!--Here Number of Nucleus would be included from results-->
+				<h3>
+					<p>Number of Nucleus - &nbsp;</p>
+					{% if n_num %}
+				   		<p>{{n_num}}</p>
+					{%endif%}
+				</h3>
+			  
+
+		  	</div>
+<!--  -->
+		 	 <br>
+	  <!--  -->
+		  	<div class="main7" id="uploadheader" > <!--Here Number of Golgi would be included from results-->
+				<h3>
+					<p>Number of Golgi - &nbsp;</p> 
+					{% if g_num %}
+						<p>{{g_num}}</p>
+			 		{%endif%}
+				</h3>
+		  	</div>
+<!--  -->
+		  	<br>
+	  <!--  -->
+		  	<div class="main8" id="uploadheader" > Here Toxicity would be included from results
+				<h3>
+					<p>Ratio - &nbsp;</p>  
+					{% if ratio %}
+						<p>{{ratio}}</p>
+			 		{%endif%}
+				</h3> 
+		  	</div>
+			
+			<div class="main11" id="uploadheader" > <!-- Here Toxicity would be included from results-->
+				<h3>
+				  	<p>Status - &nbsp;</p> 
+				  	{% if result %}
+						<p>{{result}}</p>
+			 		{%endif%}
+				</h3>
+				  
+			</div>
+<!------------------------------------End of Right Column/ Result Column---------------------------------->		
+		</form>
+
+	</div>
+
+</body>
+</html>

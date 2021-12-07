@@ -1,0 +1,336 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+.header{
+    width: 100%;
+    height: 50px;
+    background-image:linear-gradient(white);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.main{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 20%;
+    height: 15%;
+    border: 2px solid peachpuff;
+    padding: 10px;
+    background-color:peachpuff;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 10px;
+}
+.main1{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 20%;
+    height: 15%;
+    border: 2px solid peachpuff;
+    padding: 10px;
+    background-color: peachpuff;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 10px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 11%;
+    width: 7%;
+    
+    padding: 10px;
+    background-color: rgb(48, 88, 72);
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main3{
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    width: 365px;
+    height: 365px;
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+   
+}
+
+.main4{
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    width: 365px;
+    height: 365px;
+
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+h2 { 
+    position: absolute;
+    top: -13%; 
+    left: 0;
+    color: purple;
+    left: 0; 
+    
+ }
+h3 { 
+    position: absolute;
+    top: -40%; 
+    left: 0;
+    color:purple;
+    left: 0; 
+    
+ }
+ 
+.navbar
+{
+    background-image: linear-gradient(to right, black, purple);
+}
+.main6{
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    width: 300px;
+    height: 70px;
+
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+
+.main7{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 300px;
+    height: 70px;
+
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+.main8{
+    position: absolute;
+    top: 85%;
+    left: 37%;
+    width: 300px;
+    height: 100px;
+
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+
+.main11{
+    position: absolute;
+    top: 85%;
+    left: 70%;
+    width: 300px;
+    height: 100px;
+
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+button1{
+    
+    position: absolute;
+    top: 7%;
+    left: 63%;
+    width: 18px;
+    
+    padding: 5px;
+    background-color: rgb(48, 88, 72);
+    color: seashell;
+    border-radius: 5px;
+    
+}
+button2{
+    
+    position: absolute;
+    top: 7%;
+    left: 83%;
+    width: 18px;
+    
+    padding: 5px;
+    background-color: rgb(48, 88, 72);
+    color: seashell;
+    border-radius: 5px;
+    
+}
+.main9{
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    
+    padding-left: 10px;
+    width: 125px;
+    height: 44px;
+
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+
+.main10{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    
+    padding-left: 10px;
+    width: 125px;
+    height: 44px;
+
+    border: 2px solid whitesmoke;
+    
+    background-color: whitesmoke;
+    color: seashell;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    
+}
+button3{
+    
+    position: absolute;
+    top: 5%;
+    left: 63%;
+    width: 18px;
+    
+    padding: 5px;
+    background-color: rgb(48, 88, 72);
+    color: seashell;
+    border-radius: 5px;
+    
+}
+button4{
+    
+    position: absolute;
+    top: 5%;
+    left: 83%;
+    width: 18px;
+    
+    padding: 5px;
+    background-color: rgb(48, 88, 72);
+    color: seashell;
+    border-radius: 5px;
+    
+}
+.mb-4{
+    height: 350px;
+    width: 350px;
+}
+
+.main3:hover{
+    transform: scale(1.2);
+}
+
+.main4:hover{
+    transform: scale(1.2);
+}
+@media(max-width:1700px)
+{
+    .header{
+        width: 100%;
+    height: 20vh;
+
+
+}
+.main3{
+    width: 200px;
+    height: 200px;
+
+}
+
+.main4{
+    width: 200px;
+    height: 200px;
+
+}
+.main{
+    width: 15%;
+    height: 10%;
+
+}
+.main1{
+    width: 15%;
+    height: 10%;
+
+}
+.main6{
+    width: 200px;
+    height: 50px;
+}
+
+.main7{
+    width: 200px;
+    height: 50px;
+}
+
+.mb-4{
+    height: 250px;
+    width: 250px;
+}
+.main8{
+    width: 200px;
+    height: 50px;
+    top: 80%;
+}
+
+.main11{
+    width: 200px;
+    height: 50px;
+    top: 80%;
+}
+.button{
+    left: 9%;
+    width: 7%;
+}
+}
