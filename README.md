@@ -4,7 +4,7 @@ This repo contains all the necessary script and instruction for the "Quantitativ
 ## Basic Instruction for running the web app
 
 1. Clone this repo
-2. download [this](https://drive.google.com/file/d/1V2Rpsw0KH0zwRPdaoFFcOjOy5-ildYTv/view?usp=sharing) file and put it on the app directory.  
+2. download [this](https://drive.google.com/file/d/1V2Rpsw0KH0zwRPdaoFFcOjOy5-ildYTv/view?usp=sharing) file and put it on the app directory.    
 3. open the app directory in your terminal
 4. run $ python app.py
 5. open http://0.0.0.0:8080/ in your chrome browser
