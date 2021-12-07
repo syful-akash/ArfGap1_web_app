@@ -3,11 +3,13 @@ This repo contains all the necessary script and instruction for the "Quantitativ
  
 ## Basic Instruction for running the web app
 
-1. Open the app directory in your terminal
-2. run python app.py
-3. open http://0.0.0.0:8080/ in your chrome browser
-4. Now you are on the landing page of the webapp. Here on the left side you will find Nucleus and Golgi image upload button. Just Upload a set of images.
-5. Click on Predict button
+1. Clone this repo
+2. download [this](https://drive.google.com/file/d/1V2Rpsw0KH0zwRPdaoFFcOjOy5-ildYTv/view?usp=sharing) file and put it on the app directory.  
+3. open the app directory in your terminal
+4. run $ python app.py
+5. open http://0.0.0.0:8080/ in your chrome browser
+6. Now you are on the landing page of the webapp. Here on the left side you will find Nucleus and Golgi image upload button. Just Upload a set of images.
+7. Click on Predict button
 Now wait for the result. It may take several minitue based on the machine configuration.
 
 ## Package Requirement
